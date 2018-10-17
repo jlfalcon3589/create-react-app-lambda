@@ -22,6 +22,7 @@ class LambdaDemo extends Component {
 
     return (
       <p>
+        Nombre de prueba
         <button onClick={this.handleClick}>
           {loading ? 'Loading...' : 'Call Lambda'}
         </button>
