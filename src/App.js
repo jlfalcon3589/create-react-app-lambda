@@ -22,7 +22,7 @@ class LambdaDemo extends Component {
 
     return (
       <p>
-        jlfalcon
+        jlfalcon testing
         <button onClick={this.handleClick}>
           {loading ? 'Loading...' : 'Call Lambda'}
         </button>
