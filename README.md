@@ -10,9 +10,13 @@ As an example, we've included a small `src/lambda/hello.js` function, which will
 
 All functions are compiled with webpack using the Babel Loader, so you can use modern JavaScript, import npm modules, etc., without any extra setup.
 
-## Local Development
+## How To Use This Repo
 
-Before developing, clone the repository and run `yarn` from the root of the repo to install all dependencies.
+First, clone the repository: `git clone https://github.com/netlify/create-react-app-lambda.git && cd create-react-app-lambda` 
+
+Then, run `yarn` from the root of the repo to install all dependencies.
+
+Then follow the instructions below.
 
 ### Run the functions dev server
 
