@@ -16,7 +16,11 @@ First, clone the repository: `git clone https://github.com/netlify/create-react-
 
 Then, run `yarn` from the root of the repo to install all dependencies.
 
-Then follow the instructions below.
+Then run `yarn start` to launch both the lambda function dev server and the client app dev server using the `run-p` utility.
+
+🎉You should now have a working JAMStack app on `http://localhost:3000/`!🎉
+
+In case you need to run each server individually, follow the instructions below.
 
 ### Run the functions dev server
 
@@ -28,11 +32,11 @@ yarn start:lambda
 
 This will open a local server running at `http://localhost:9000` serving your Lambda functions, updating as you make changes in the `src/lambda` folder.
 
-You can then access your functions directly at `http://localhost:9000/{function_name}`, but to access them with the app, you'll need to start the app dev server. Under the hood, this uses `react-scripts`' [advanced proxy feature](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#configuring-the-proxy-manually) with the `setupProxy.js` file.
+You can then access your functions directly at `http://localhost:9000/{function_name}`, but to access them with the app, you'll need to start the app dev server.
 
 ### Run the app dev server
 
-While the functions server is still running, open a new terminal tab and run:
+In a new terminal tab and run:
 
 ```
 yarn start
@@ -40,4 +44,4 @@ yarn start
 
 This will start the normal create-react-app dev server and open your app at `http://localhost:3000`.
 
-Local in-app requests to the relative path `/.netlify/functions/*` will automatically be proxied to the local functions dev server.
+Local in-app requests to the relative path `/.netlify/functions/*` will automatically be proxied to the local functions dev server. Under the hood, this uses `react-scripts`' [advanced proxy feature](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#configuring-the-proxy-manually) with the `setupProxy.js` file.
