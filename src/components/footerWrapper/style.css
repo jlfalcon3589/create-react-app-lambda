@@ -1,20 +1,19 @@
-footer{
+:root{
+    --Footer-color: white;
+}
+.Footer{
     background:  linear-gradient(150deg,#FF9966 15%,#FF6062 70%,#FF6062 100%);
 }
-
-.card small{
+.Footer small{
     font-size: 12px;
-    color: white;
+} 
+.Footer p{
+    font-size: 15px;
+    text-align: left;
 }
-
-.uk-divider{
-    margin: 0;
+footer hr{
+    border-top: 1px solid rgba(255,255,255,.1);
 }
-
-footer{
-    color: rgba(255,255,255,0.8);
-}
-
 .footer-bottom .framework{
     margin: 0 5px;
 }

@@ -1,9 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
-
-// import Register from './Register'
-// import LayoutContainer from './containers/Layout'
 import NotFound from './pages/NotFound'
 // import SubscriptionComponents from './components/Register/Subscription'
 

@@ -1,0 +1,30 @@
+:root{
+  --primaryColor: #FF6B6F;
+  --secondaryColor: #403F3F;
+  
+  --Hero__Button-backgroundColor: #f9f9f9;
+  --Hero__SubHeader-color: #403F3F;
+  
+  --Input-fontSize: 1rem;
+  --Input-color: rgba(0,0,0,0.5);
+  --Input-borderRadius: 10px;
+  --Button-borderRadius: 10px;
+}
+
+body{
+  background-color: #FCE8E8;
+  color: var(--secondaryColor);
+}
+
+.Hero .h1, h1{
+  font-size: 5rem;
+  color: var(--primaryColor);
+}
+
+.Hero .Hero__Container .container{
+  margin-top: 15vh;
+}
+
+.searchBox .Button.btn{
+  padding: 0.7rem 1.5rem;
+}
