@@ -24,6 +24,7 @@ const HeroComponent = () => (
             <Row>
                 <Column className="offset-md-3 col-md-6">
                     <SearchBox products={mobiles} className="searchBox mt-5" />
+Testing
                 </Column>
             </Row>
         </Container>
